@@ -36,4 +36,32 @@
         <maven.compiler.target>18</maven.compiler.target>
         <exec.mainClass>calculadora.Calculadora</exec.mainClass>
     </properties>
+    <build>
+        <plugins>
+            <plugin>
+                <groupld>org.apache.maven.plugins</groupld>
+                <artifactld>maven-assembly-plugin</artifactld>
+                <executions>
+                    <execution>
+                        <phase>packpage</phase>
+                        <goals>
+                            <goal>sigle</goal>
+                        </goals>
+                        <configuration>
+                            <archive>
+                                <manifest>
+                                    <mainClass>
+                                        Principal
+                                    </mainClass>
+                                </manifest>
+                            </archive>
+                            <descriptorRefs>
+                                <descriptorRef>jar-with-dependencies</decriptorRef>
+                            </descriptorRefs>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>
