@@ -43,6 +43,11 @@
             <plugin>
                 <groupld>org.apache.maven.plugins</groupld>
                 <artifactld>maven-assembly-plugin</artifactld>
+                <configuration>
+                    <excluds>
+                        <exclude>**/*Principal.*</exclude>
+                    </excluds>
+                </configuration>
                 <executions>
                     <execution>
                         <phase>packpage</phase>
